@@ -13,13 +13,14 @@
 The rotate_word(text) function takes a non-empty string and shifts its initial character to the end while maintaining the original order and casing of all remaining characters. This is accomplished by using Python string slicing to extract the trailing substring and concatenate the first character to the end.
 
 ```python
-def rotate_word(w):
-    return w[1:] + w[0]
+def rotate_word(word):
+    return word[1:] + word[0]
 
-print(rotate_word("python"))
-print(rotate_word("logic"))
-print(rotate_word("Code"))
-print(rotate_word("A"))
+print (rotate_word("python"))
+print (rotate_word("logic"))
+print (rotate_word("Code"))
+print (rotate_word("A"))
+print (rotate_word("smile"))
 ```
 
 #### B. Username Builder Problem
