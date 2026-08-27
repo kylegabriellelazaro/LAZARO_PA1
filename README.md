@@ -30,23 +30,28 @@ The make_username(first_name, last_name) function accepts two name strings, stri
 def make_username(first_name, last_name):
     username = first_name.lower().replace(" ", "") + "." + last_name.lower().replace(" ", "")
     return (username)
-
-print(make_username("Ada", "Lovelace"))
-print(make_username("Alan", "Turing"))
-print(make_username("Ana Maria", "De Leon"))
+    
+print (make_username("Ada", "Lovelace"))
+print (make_username("Alan", "Turing"))
+print (make_username("Ana Maria", "De Leon"))
 ```
 
 #### C. Bookend Swap Problem
 The swap_bookends(items) function takes a list of at least two items and returns a new list where the first and last elements have swapped positions while leaving the middle elements untouched. It utilizes extended sequence unpacking (first, *middle, last) to break down the input list and construct the modified sequence without altering the original input.
 
 ```python
-def swap_bookends(items):
-    first, *middle, last = items
+def swap_bookend(var):
+    first, *middle, last = var 
     return [last, *middle, first]
 
-print(swap_bookends([1, 2, 3, 4, 5, 6]))
-print(swap_bookends(["red", "green", "blue"]))
-print(swap_bookends([8, 3]))
+numbers = [1, 2, 3, 4, 5, 6]
+print (swap_bookend(numbers))
+
+colors = ["red", "green", "blue"]
+print (swap_bookend(colors))
+
+n2 = [8, 3]
+print (swap_bookend(n2))
 ```
 
 ## READMe File Version History
