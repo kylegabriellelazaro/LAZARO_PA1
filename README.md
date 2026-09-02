@@ -71,6 +71,8 @@ August 27, 2026 - Update READMe output uploaded
 ```python
 np.random.seed(2112)
 X = np.random.randint(10, 101, size=(5, 5))
+x_bar = np.mean(X)
+sigma = np.std(X)
 X_normalized = (X - x_bar) / sigma
 np.save('X_normalized.npy', X_normalized)
 ```
@@ -79,7 +81,9 @@ np.save('X_normalized.npy', X_normalized)
 - This task involves creating a $10\times 10$ array containing the cubed values of the first 100 positive integers, applying Boolean filtering to select only the cubed values divisible by 4, displaying the output shape and selected elements, and saving the filtered array to div_by_4.npy.
 
 ```python
-
+C = np.arange(1, 101)
+C.resize(10, 10)
+div_by_4 = C[C % 4 == 0]
 ```
 
 #### C. Above-Mean Squares Problem
