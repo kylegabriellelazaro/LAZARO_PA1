@@ -71,9 +71,13 @@ August 27, 2026 - Update READMe output uploaded
 ```python
 np.random.seed(2112)
 X = np.random.randint(10, 101, size=(5, 5))
+
 x_bar = np.mean(X)
+
 sigma = np.std(X)
+
 X_normalized = (X - x_bar) / sigma
+
 np.save('X_normalized.npy', X_normalized)
 ```
 
@@ -83,13 +87,26 @@ np.save('X_normalized.npy', X_normalized)
 ```python
 C = np.arange(1, 101)
 C.resize(10, 10)
+
 div_by_4 = C[C % 4 == 0]
+
+div_by_4.size
+
+np.save('div_by_4.npy', div_by_4)
 ```
 
 #### C. Above-Mean Squares Problem
 - This task asks to construct a $6\times 6$ matrix filled with the squared values of the first 36 positive integers, calculate the mean of all matrix elements, use Boolean filtering to extract elements strictly greater than the mean, display the required verification metrics, and save the array as above_mean.npy. 
 ```python
+S = (np.arange(1, 37) ** 2).reshape(6, 6)
 
+S_mean = np.mean(S)
+
+above_mean = S[S > S_mean]
+
+above_mean.size
+
+np.save('above_mean.npy', above_mean)
 ```
 
 ## READMe File Version History
