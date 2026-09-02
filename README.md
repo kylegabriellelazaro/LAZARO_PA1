@@ -56,3 +56,37 @@ print (swap_bookend(n2))
 
 ## READMe File Version History
 August 27, 2026 - Update READMe output uploaded
+
+
+# Programming Assignment 2
+## Objectives:
+1. create and reshape NumPy arrays using appropriate NumPy functions;
+2. perform vectorized numerical operations on an ndarray;
+3. compute array statistics and use Boolean conditions to select elements; and
+4. save computed NumPy arrays as .npy files.
+
+#### A. Reproducible Normalization Problem
+- This task requires generating a reproducible $5\times 5$ matrix of random integers from 10 to 100 using the fixed random seed 2112, normalizing its elements using standard score scaling based on the population mean and standard deviation, displaying the required array statistics, and exporting the resulting array to X_normalized.npy
+
+```python
+np.random.seed(2112)
+X = np.random.randint(10, 101, size=(5, 5))
+X_normalized = (X - x_bar) / sigma
+np.save('X_normalized.npy', X_normalized)
+```
+
+#### B. Cubes Divisible by 4 Problem
+- This task involves creating a $10\times 10$ array containing the cubed values of the first 100 positive integers, applying Boolean filtering to select only the cubed values divisible by 4, displaying the output shape and selected elements, and saving the filtered array to div_by_4.npy.
+
+```python
+
+```
+
+#### C. Above-Mean Squares Problem
+- This task asks to construct a $6\times 6$ matrix filled with the squared values of the first 36 positive integers, calculate the mean of all matrix elements, use Boolean filtering to extract elements strictly greater than the mean, display the required verification metrics, and save the array as above_mean.npy. 
+```python
+
+```
+
+## READMe File Version History
+September 3, 2026 - Update READMe output uploaded
