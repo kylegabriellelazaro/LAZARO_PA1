@@ -59,6 +59,9 @@ August 27, 2026 - Update READMe output uploaded
 
 
 # Programming Assignment 2
+#### Made by: Lazaro, Kyle Gabrielle A. | 2ECE-C
+#### Date Submitted: September 3, 2026  
+
 ## Objectives:
 1. create and reshape NumPy arrays using appropriate NumPy functions;
 2. perform vectorized numerical operations on an ndarray;
